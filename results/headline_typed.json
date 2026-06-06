@@ -1,0 +1,3580 @@
+{
+  "triple": [
+    "FAFB",
+    "BANC",
+    "MCNS"
+  ],
+  "N": 155,
+  "edges": 1074,
+  "identical": true,
+  "vf2_iso": true,
+  "celltype_concordant_rows": 155,
+  "seed_type": "APL",
+  "rows": [
+    {
+      "row": 0,
+      "root_ids": [
+        720575940613583001,
+        720575941633862331,
+        10977
+      ],
+      "cell_type": [
+        "APL",
+        "APL",
+        "APL"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "GABA",
+        "GABA",
+        "GABA"
+      ]
+    },
+    {
+      "row": 1,
+      "root_ids": [
+        720575940635066975,
+        720575941490932681,
+        11143
+      ],
+      "cell_type": [
+        "VP1m_l2PN",
+        "VP1m_l2PN",
+        "VP1m_l2PN"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 2,
+      "root_ids": [
+        720575940624879911,
+        720575941477870913,
+        11050
+      ],
+      "cell_type": [
+        "VP1d+VP4_l2PN1",
+        "VP1d+VP4_l2PN1",
+        "VP1d+VP4_l2PN1"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 3,
+      "root_ids": [
+        720575940602564320,
+        720575941454554163,
+        76431
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 4,
+      "root_ids": [
+        720575940621471732,
+        720575941644708984,
+        123841
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 5,
+      "root_ids": [
+        720575940622944461,
+        720575941574947766,
+        68759
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 6,
+      "root_ids": [
+        720575940628917980,
+        720575941577571417,
+        44260
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 7,
+      "root_ids": [
+        720575940620500417,
+        720575941599434281,
+        537458
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 8,
+      "root_ids": [
+        720575940621585279,
+        720575941555160833,
+        12717
+      ],
+      "cell_type": [
+        "lLN2X12",
+        "lLN2X12",
+        "lLN2X12"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 9,
+      "root_ids": [
+        720575940624832743,
+        720575941633655739,
+        12977
+      ],
+      "cell_type": [
+        "lLN2X12",
+        "lLN2X12",
+        "lLN2X12"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 10,
+      "root_ids": [
+        720575940624435128,
+        720575941574107643,
+        11594
+      ],
+      "cell_type": [
+        "lLN2X11",
+        "lLN2X11",
+        "lLN2X11"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 11,
+      "root_ids": [
+        720575940628059978,
+        720575941645286008,
+        11952
+      ],
+      "cell_type": [
+        "lLN2X11",
+        "lLN2X11",
+        "lLN2X11"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 12,
+      "root_ids": [
+        720575940616197819,
+        720575941555414273,
+        11837
+      ],
+      "cell_type": [
+        "lLN2X05",
+        "lLN2X05",
+        "lLN2X05"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 13,
+      "root_ids": [
+        720575940616758322,
+        720575941551975679,
+        555318
+      ],
+      "cell_type": [
+        "lLN2X04",
+        "lLN2X04",
+        "lLN2X04"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 14,
+      "root_ids": [
+        720575940637136752,
+        720575941603666617,
+        23477
+      ],
+      "cell_type": [
+        "lLN2X04",
+        "lLN2X04",
+        "lLN2X04"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 15,
+      "root_ids": [
+        720575940613804259,
+        720575941537986275,
+        11517
+      ],
+      "cell_type": [
+        "lLN2T_c",
+        "lLN2T_c",
+        "lLN2T_c"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 16,
+      "root_ids": [
+        720575940634545890,
+        720575941435549582,
+        10133
+      ],
+      "cell_type": [
+        "lLN2F_b",
+        "lLN2F_b",
+        "lLN2F_b"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "GABA",
+        "SER",
+        "GABA"
+      ]
+    },
+    {
+      "row": 17,
+      "root_ids": [
+        720575940609282825,
+        720575941574984861,
+        10376
+      ],
+      "cell_type": [
+        "lLN2F_b",
+        "lLN2F_b",
+        "lLN2F_b"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "GABA",
+        "SER",
+        "GABA"
+      ]
+    },
+    {
+      "row": 18,
+      "root_ids": [
+        720575940605758142,
+        720575941449920605,
+        10096
+      ],
+      "cell_type": [
+        "lLN2F_a",
+        "lLN2F_a",
+        "lLN2F_a"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        ""
+      ]
+    },
+    {
+      "row": 19,
+      "root_ids": [
+        720575940640803200,
+        720575941519202732,
+        10459
+      ],
+      "cell_type": [
+        "lLN2F_a",
+        "lLN2F_a",
+        "lLN2F_a"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        ""
+      ]
+    },
+    {
+      "row": 20,
+      "root_ids": [
+        720575940618112310,
+        720575941659305752,
+        521935
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 21,
+      "root_ids": [
+        720575940616908177,
+        720575941568914164,
+        10463
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 22,
+      "root_ids": [
+        720575940629792732,
+        720575941633855931,
+        10632
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 23,
+      "root_ids": [
+        720575940648633988,
+        720575941496262855,
+        10905
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 24,
+      "root_ids": [
+        720575940612347571,
+        720575941412138095,
+        11099
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 25,
+      "root_ids": [
+        720575940631603281,
+        720575941498871777,
+        11262
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 26,
+      "root_ids": [
+        720575940640541091,
+        720575941515011907,
+        11292
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 27,
+      "root_ids": [
+        720575940625585508,
+        720575941447716116,
+        11400
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 28,
+      "root_ids": [
+        720575940631704716,
+        720575941470432887,
+        11523
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 29,
+      "root_ids": [
+        720575940660217729,
+        720575941503736299,
+        11531
+      ],
+      "cell_type": [
+        "lLN1_bc",
+        "lLN1_bc",
+        "lLN1_bc"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 30,
+      "root_ids": [
+        720575940623945404,
+        720575941600820521,
+        17569
+      ],
+      "cell_type": [
+        "VC3_adPN",
+        "VC3_adPN",
+        "VC3_adPN"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 31,
+      "root_ids": [
+        720575940622726271,
+        720575941564401298,
+        10126
+      ],
+      "cell_type": [
+        "DP1m_adPN",
+        "DP1m_adPN",
+        "DP1m_adPN"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 32,
+      "root_ids": [
+        720575940624491402,
+        720575941490639305,
+        246941
+      ],
+      "cell_type": [
+        "ORN_VC3",
+        "ORN_VC3",
+        "ORN_VC3"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 33,
+      "root_ids": [
+        720575940627493141,
+        720575941612703708,
+        110574
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 34,
+      "root_ids": [
+        720575940624494996,
+        720575941440540351,
+        137438
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 35,
+      "root_ids": [
+        720575940643547296,
+        720575941498922146,
+        111803
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 36,
+      "root_ids": [
+        720575940626513027,
+        720575941413783956,
+        43354
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 37,
+      "root_ids": [
+        720575940626513171,
+        720575941536421603,
+        107516
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 38,
+      "root_ids": [
+        720575940628787962,
+        720575941439648603,
+        76949
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 39,
+      "root_ids": [
+        720575940615838662,
+        720575941632730784,
+        56866
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 40,
+      "root_ids": [
+        720575940627479829,
+        720575941525905252,
+        122595
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 41,
+      "root_ids": [
+        720575940627483413,
+        720575941593157227,
+        58058
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 42,
+      "root_ids": [
+        720575940624428019,
+        720575941545533372,
+        114029
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 43,
+      "root_ids": [
+        720575940604962918,
+        720575941447099412,
+        141772
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 44,
+      "root_ids": [
+        720575940634849460,
+        720575941431063822,
+        73783
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 45,
+      "root_ids": [
+        720575940637826623,
+        720575941393316758,
+        109512
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 46,
+      "root_ids": [
+        720575940618422592,
+        720575941639844213,
+        140867
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 47,
+      "root_ids": [
+        720575940638807485,
+        720575941574980873,
+        128233
+      ],
+      "cell_type": [
+        "ORN_DA1",
+        "ORN_DA1",
+        "ORN_DA1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 48,
+      "root_ids": [
+        720575940632019247,
+        720575941435117454,
+        151277
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 49,
+      "root_ids": [
+        720575940622890509,
+        720575941476701236,
+        122285
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 50,
+      "root_ids": [
+        720575940628807503,
+        720575941585435358,
+        77628
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 51,
+      "root_ids": [
+        720575940620012321,
+        720575941585532126,
+        77631
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 52,
+      "root_ids": [
+        720575940637804260,
+        720575941631235554,
+        122326
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 53,
+      "root_ids": [
+        720575940630477305,
+        720575941494930375,
+        57806
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 54,
+      "root_ids": [
+        720575940624429036,
+        720575941438651436,
+        136581
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 55,
+      "root_ids": [
+        720575940623009416,
+        720575941638205557,
+        112359
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 56,
+      "root_ids": [
+        720575940618182981,
+        720575941526881380,
+        124690
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 57,
+      "root_ids": [
+        720575940618184839,
+        720575941638524021,
+        79761
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 58,
+      "root_ids": [
+        720575940618198721,
+        720575941439540821,
+        79950
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 59,
+      "root_ids": [
+        720575940634839988,
+        720575941722415418,
+        543037
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "DA"
+      ]
+    },
+    {
+      "row": 60,
+      "root_ids": [
+        720575940616087323,
+        720575941557545892,
+        41131
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 61,
+      "root_ids": [
+        720575940632357284,
+        720575941497776713,
+        80380
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 62,
+      "root_ids": [
+        720575940632364717,
+        720575941528110980,
+        140737
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 63,
+      "root_ids": [
+        720575940610743282,
+        720575941410989227,
+        567978
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 64,
+      "root_ids": [
+        720575940618266900,
+        720575941412247700,
+        102954
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 65,
+      "root_ids": [
+        720575940610960994,
+        720575941559303918,
+        141659
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 66,
+      "root_ids": [
+        720575940623203767,
+        720575941531051723,
+        127203
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 67,
+      "root_ids": [
+        720575940624711655,
+        720575941442653098,
+        141840
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 68,
+      "root_ids": [
+        720575940626364401,
+        720575941515372025,
+        71474
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 69,
+      "root_ids": [
+        720575940611129571,
+        720575941546334132,
+        103609
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 70,
+      "root_ids": [
+        720575940624770574,
+        720575941496290503,
+        79776
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "DA"
+      ]
+    },
+    {
+      "row": 71,
+      "root_ids": [
+        720575940620425310,
+        720575941534164658,
+        127593
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 72,
+      "root_ids": [
+        720575940621832542,
+        720575941518048428,
+        103720
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 73,
+      "root_ids": [
+        720575940621857313,
+        720575941653252369,
+        72604
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 74,
+      "root_ids": [
+        720575940629277687,
+        720575941578690293,
+        104983
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 75,
+      "root_ids": [
+        720575940620507862,
+        720575941626202267,
+        144230
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 76,
+      "root_ids": [
+        720575940639069493,
+        720575941535561192,
+        129627
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 77,
+      "root_ids": [
+        720575940613201814,
+        720575941352084784,
+        188926
+      ],
+      "cell_type": [
+        "ORN_VM5v",
+        "ORN_VM5v",
+        "ORN_VM5v"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 78,
+      "root_ids": [
+        720575940631737005,
+        720575941554321409,
+        916996
+      ],
+      "cell_type": [
+        "ORN_VM5d",
+        "ORN_VM5d",
+        "ORN_VM5d"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 79,
+      "root_ids": [
+        720575940620356468,
+        720575941477449758,
+        216355
+      ],
+      "cell_type": [
+        "ORN_VM5d",
+        "ORN_VM5d",
+        "ORN_VM5d"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 80,
+      "root_ids": [
+        720575940632224031,
+        720575941566178663,
+        212945075
+      ],
+      "cell_type": [
+        "ORN_DM1",
+        "ORN_DM1",
+        "ORN_DM1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 81,
+      "root_ids": [
+        720575940631203896,
+        720575941535058881,
+        179786
+      ],
+      "cell_type": [
+        "ORN_VA2",
+        "ORN_VA2",
+        "ORN_VA2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 82,
+      "root_ids": [
+        720575940639451043,
+        720575941611461706,
+        118846
+      ],
+      "cell_type": [
+        "ORN_V",
+        "ORN_V",
+        "ORN_V"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 83,
+      "root_ids": [
+        720575940623065013,
+        720575941661832504,
+        524437
+      ],
+      "cell_type": [
+        "HRN_VP4",
+        "HRN_VP4",
+        "HRN_VP4"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 84,
+      "root_ids": [
+        720575940633353568,
+        720575941530427595,
+        289691
+      ],
+      "cell_type": [
+        "ORN_VM5d",
+        "ORN_VM5d",
+        "ORN_VM5d"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 85,
+      "root_ids": [
+        720575940616254016,
+        720575941546419900,
+        157068
+      ],
+      "cell_type": [
+        "ORN_VM7v",
+        "ORN_VM7v",
+        "ORN_VM7v"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 86,
+      "root_ids": [
+        720575940635159982,
+        720575941604106430,
+        136640
+      ],
+      "cell_type": [
+        "ORN_VM7d",
+        "ORN_VM7d",
+        "ORN_VM7d"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 87,
+      "root_ids": [
+        720575940603871404,
+        720575941605048510,
+        246079
+      ],
+      "cell_type": [
+        "ORN_VM5d",
+        "ORN_VM5d",
+        "ORN_VM5d"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 88,
+      "root_ids": [
+        720575940617483318,
+        720575941507254039,
+        675229879
+      ],
+      "cell_type": [
+        "ORN_VM5d",
+        "ORN_VM5d",
+        "ORN_VM5d"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 89,
+      "root_ids": [
+        720575940632356066,
+        720575941566241590,
+        369074
+      ],
+      "cell_type": [
+        "ORN_VA2",
+        "ORN_VA2",
+        "ORN_VA2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 90,
+      "root_ids": [
+        720575940647097732,
+        720575941568447278,
+        194695
+      ],
+      "cell_type": [
+        "ORN_DM2",
+        "ORN_DM2",
+        "ORN_DM2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 91,
+      "root_ids": [
+        720575940606001074,
+        720575941534127704,
+        742571852
+      ],
+      "cell_type": [
+        "ORN_DM1",
+        "ORN_DM1",
+        "ORN_DM1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 92,
+      "root_ids": [
+        720575940629350782,
+        720575941489518133,
+        202705
+      ],
+      "cell_type": [
+        "ORN_DM1",
+        "ORN_DM1",
+        "ORN_DM1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 93,
+      "root_ids": [
+        720575940641936584,
+        720575941433248526,
+        76309
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 94,
+      "root_ids": [
+        720575940617937437,
+        720575941603856574,
+        76488
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 95,
+      "root_ids": [
+        720575940609935310,
+        720575941536746211,
+        77093
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 96,
+      "root_ids": [
+        720575940627367189,
+        720575941630166754,
+        67058
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 97,
+      "root_ids": [
+        720575940613188319,
+        720575941606452333,
+        122077
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 98,
+      "root_ids": [
+        720575940621462797,
+        720575941508232994,
+        546981
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 99,
+      "root_ids": [
+        720575940621477402,
+        720575941665916403,
+        135506
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 100,
+      "root_ids": [
+        720575940637737021,
+        720575941631815877,
+        67468
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 101,
+      "root_ids": [
+        720575940632077127,
+        720575941632040645,
+        57770
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 102,
+      "root_ids": [
+        720575940622926472,
+        720575941508459358,
+        48337
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 103,
+      "root_ids": [
+        720575940620007457,
+        720575941609994214,
+        78066
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 104,
+      "root_ids": [
+        720575940632111780,
+        720575941610108333,
+        185386
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 105,
+      "root_ids": [
+        720575940632123439,
+        720575941632733115,
+        48596
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 106,
+      "root_ids": [
+        720575940621553535,
+        720575941633072325,
+        68239
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 107,
+      "root_ids": [
+        720575940623009549,
+        720575941494799488,
+        39531
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 108,
+      "root_ids": [
+        720575940615931293,
+        720575941555292644,
+        111695
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 109,
+      "root_ids": [
+        720575940615961684,
+        720575941478678122,
+        188198
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 110,
+      "root_ids": [
+        720575940624480148,
+        720575941539935357,
+        78992
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 111,
+      "root_ids": [
+        720575940604997152,
+        720575941438716895,
+        137890
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 112,
+      "root_ids": [
+        720575940605083838,
+        720575941460124486,
+        112009
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 113,
+      "root_ids": [
+        720575940634836671,
+        720575941439369301,
+        49526
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 114,
+      "root_ids": [
+        720575940621680133,
+        720575941439373909,
+        69539
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 115,
+      "root_ids": [
+        720575940626220830,
+        720575941580001781,
+        66105
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "DA"
+      ]
+    },
+    {
+      "row": 116,
+      "root_ids": [
+        720575940626225941,
+        720575941480250787,
+        69854
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 117,
+      "root_ids": [
+        720575940634975851,
+        720575941439813311,
+        101792
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 118,
+      "root_ids": [
+        720575940605552742,
+        720575941542787333,
+        102199
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 119,
+      "root_ids": [
+        720575940620310625,
+        720575941612611548,
+        41920
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 120,
+      "root_ids": [
+        720575940605606274,
+        720575941528408708,
+        126779
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 121,
+      "root_ids": [
+        720575940610907490,
+        720575941462683917,
+        532284
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 122,
+      "root_ids": [
+        720575940638468678,
+        720575941642988114,
+        61802
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 123,
+      "root_ids": [
+        720575940632433828,
+        720575941613432339,
+        143757
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 124,
+      "root_ids": [
+        720575940627709948,
+        720575941498627657,
+        116218
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 125,
+      "root_ids": [
+        720575940626316802,
+        720575941440957391,
+        72854
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 126,
+      "root_ids": [
+        720575940635110286,
+        720575941440961231,
+        536046
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 127,
+      "root_ids": [
+        720575940620424641,
+        720575941412294511,
+        53756
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "DA"
+      ]
+    },
+    {
+      "row": 128,
+      "root_ids": [
+        720575940629271596,
+        720575941441356479,
+        145574
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 129,
+      "root_ids": [
+        720575940614008785,
+        720575941614417305,
+        84926
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 130,
+      "root_ids": [
+        720575940623315347,
+        720575941465206806,
+        147589
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "DA"
+      ]
+    },
+    {
+      "row": 131,
+      "root_ids": [
+        720575940624830503,
+        720575941481728186,
+        149720
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 132,
+      "root_ids": [
+        720575940629318394,
+        720575941593656939,
+        120642
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "DA"
+      ]
+    },
+    {
+      "row": 133,
+      "root_ids": [
+        720575940626828574,
+        720575941539400573,
+        97624
+      ],
+      "cell_type": [
+        "KCg-m",
+        "KCg-m",
+        "KCg-m"
+      ],
+      "super_class": [
+        "central",
+        "",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "DA"
+      ]
+    },
+    {
+      "row": 134,
+      "root_ids": [
+        720575940623062749,
+        720575941413627796,
+        463132
+      ],
+      "cell_type": [
+        "ORN_DM2",
+        "ORN_DM2",
+        "ORN_DM2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 135,
+      "root_ids": [
+        720575940607459849,
+        720575941437906194,
+        134208
+      ],
+      "cell_type": [
+        "ORN_VC1",
+        "ORN_VC1",
+        "ORN_VC1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 136,
+      "root_ids": [
+        720575940635081464,
+        720575941574729736,
+        339258
+      ],
+      "cell_type": [
+        "ORN_VA3",
+        "ORN_VA3",
+        "ORN_VA3"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 137,
+      "root_ids": [
+        720575940644028452,
+        720575941528165542,
+        169187
+      ],
+      "cell_type": [
+        "ORN_VA2",
+        "ORN_VA2",
+        "ORN_VA2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 138,
+      "root_ids": [
+        720575940623032102,
+        720575941566423143,
+        175022
+      ],
+      "cell_type": [
+        "ORN_VM7v",
+        "ORN_VM7v",
+        "ORN_VM7v"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 139,
+      "root_ids": [
+        720575940617208098,
+        720575941469183709,
+        577902084
+      ],
+      "cell_type": [
+        "ORN_VM6m",
+        "ORN_VM6m",
+        "ORN_VM6m"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 140,
+      "root_ids": [
+        720575940620319329,
+        720575941523313739,
+        158617
+      ],
+      "cell_type": [
+        "ORN_VA2",
+        "ORN_VA2",
+        "ORN_VA2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 141,
+      "root_ids": [
+        720575940622063871,
+        720575941642647141,
+        569249
+      ],
+      "cell_type": [
+        "ORN_VA2",
+        "ORN_VA2",
+        "ORN_VA2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 142,
+      "root_ids": [
+        720575940622880588,
+        720575941668082675,
+        185543
+      ],
+      "cell_type": [
+        "ORN_DM2",
+        "ORN_DM2",
+        "ORN_DM2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "SER",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 143,
+      "root_ids": [
+        720575940615723350,
+        720575941512929489,
+        353891
+      ],
+      "cell_type": [
+        "ORN_DM1",
+        "ORN_DM1",
+        "ORN_DM1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 144,
+      "root_ids": [
+        720575940621585507,
+        720575941552754750,
+        350401853
+      ],
+      "cell_type": [
+        "ORN_VC3",
+        "ORN_VC3",
+        "ORN_VC3"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 145,
+      "root_ids": [
+        720575940626240522,
+        720575941565208886,
+        316593
+      ],
+      "cell_type": [
+        "ORN_VC3",
+        "ORN_VC3",
+        "ORN_VC3"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 146,
+      "root_ids": [
+        720575940639121636,
+        720575941633327776,
+        10491
+      ],
+      "cell_type": [
+        "ALIN1",
+        "ALIN1",
+        "ALIN1"
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "nt": [
+        "GLUT",
+        "GLUT",
+        ""
+      ]
+    },
+    {
+      "row": 147,
+      "root_ids": [
+        720575940626213642,
+        720575941493450987,
+        131182
+      ],
+      "cell_type": [
+        "ORN_VM7d",
+        "ORN_VM7d",
+        "ORN_VM7d"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 148,
+      "root_ids": [
+        720575940634818296,
+        720575941568342130,
+        566006
+      ],
+      "cell_type": [
+        "ORN_VC1",
+        "ORN_VC1",
+        "ORN_VC1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 149,
+      "root_ids": [
+        720575940610015586,
+        720575941588161348,
+        564686
+      ],
+      "cell_type": [
+        "ORN_VA3",
+        "ORN_VA3",
+        "ORN_VA3"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 150,
+      "root_ids": [
+        720575940638410611,
+        720575941566567271,
+        276359
+      ],
+      "cell_type": [
+        "ORN_VA2",
+        "ORN_VA2",
+        "ORN_VA2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 151,
+      "root_ids": [
+        720575940603356128,
+        720575941522565859,
+        265477191
+      ],
+      "cell_type": [
+        "ORN_DM2",
+        "ORN_DM2",
+        "ORN_DM2"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 152,
+      "root_ids": [
+        720575940622891923,
+        720575941522214391,
+        279476
+      ],
+      "cell_type": [
+        "ORN_DM1",
+        "ORN_DM1",
+        "ORN_DM1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "nan",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 153,
+      "root_ids": [
+        720575940634574004,
+        720575941442501583,
+        244360
+      ],
+      "cell_type": [
+        "ORN_DL1",
+        "ORN_DL1",
+        "ORN_DL1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 154,
+      "root_ids": [
+        720575940638487384,
+        720575941626139850,
+        235596160
+      ],
+      "cell_type": [
+        "ORN_DL1",
+        "ORN_DL1",
+        "ORN_DL1"
+      ],
+      "super_class": [
+        "sensory",
+        "sensory",
+        "cb_sensory"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    }
+  ]
+}

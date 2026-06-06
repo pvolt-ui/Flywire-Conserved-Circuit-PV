@@ -1,0 +1,866 @@
+{
+  "triple": [
+    "FAFB",
+    "BANC",
+    "MCNS"
+  ],
+  "N": 37,
+  "edges": 70,
+  "identical": true,
+  "vf2_iso": true,
+  "superclass_concordant_rows": 0,
+  "celltype_concordant_rows": 0,
+  "rows": [
+    {
+      "row": 0,
+      "root_ids": [
+        720575940604250214,
+        720575941430087561,
+        37145
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB1331a",
+        "CB3500",
+        "Tm1"
+      ],
+      "nt": [
+        "GLUT",
+        "GABA",
+        "ACH"
+      ]
+    },
+    {
+      "row": 1,
+      "root_ids": [
+        720575940616695099,
+        720575941472201024,
+        19134
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB0530",
+        "CB1084",
+        "Pm2b"
+      ],
+      "nt": [
+        "GLUT",
+        "GABA",
+        "GABA"
+      ]
+    },
+    {
+      "row": 2,
+      "root_ids": [
+        720575940624705514,
+        720575941612332134,
+        30058
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PS112",
+        "CB2157",
+        "MeLo9"
+      ],
+      "nt": [
+        "GLUT",
+        "GABA",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 3,
+      "root_ids": [
+        720575940630937660,
+        720575941552724286,
+        74281
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB0122",
+        "CB3497",
+        "MeLo9"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 4,
+      "root_ids": [
+        720575940635139439,
+        720575941543199261,
+        31912
+      ],
+      "super_class": [
+        "ascending",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "AN_GNG_IPS_3",
+        "CB0907",
+        "Tm1"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "ACH"
+      ]
+    },
+    {
+      "row": 5,
+      "root_ids": [
+        720575940617416256,
+        720575941402532464,
+        14486
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PS158",
+        "CB1369",
+        "Pm12"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 6,
+      "root_ids": [
+        720575940641688016,
+        720575941547329460,
+        11894
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PLP173",
+        "CB4203",
+        "MeLo8"
+      ],
+      "nt": [
+        "GABA",
+        "GLUT",
+        "GABA"
+      ]
+    },
+    {
+      "row": 7,
+      "root_ids": [
+        720575940618116569,
+        720575941486786054,
+        10318
+      ],
+      "super_class": [
+        "visual_centrifugal",
+        "central_brain_intrinsic",
+        "visual_centrifugal"
+      ],
+      "cell_type": [
+        "cL20",
+        "CB0453",
+        "MeVC4b"
+      ],
+      "nt": [
+        "GABA",
+        "GLUT",
+        "ACH"
+      ]
+    },
+    {
+      "row": 8,
+      "root_ids": [
+        720575940629033977,
+        720575941589746756,
+        19046
+      ],
+      "super_class": [
+        "central",
+        "ascending",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB1420",
+        "AN27X017",
+        "TmY19a"
+      ],
+      "nt": [
+        "GLUT",
+        "GLUT",
+        "GABA"
+      ]
+    },
+    {
+      "row": 9,
+      "root_ids": [
+        720575940610739918,
+        720575941450497614,
+        118620
+      ],
+      "super_class": [
+        "visual_projection",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "LT82",
+        "CB3156",
+        "Y14"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 10,
+      "root_ids": [
+        720575940625925450,
+        720575941476472113,
+        15808
+      ],
+      "super_class": [
+        "visual_projection",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "LPLC4",
+        "CB2054",
+        "Pm8"
+      ],
+      "nt": [
+        "ACH",
+        "SER",
+        "GABA"
+      ]
+    },
+    {
+      "row": 11,
+      "root_ids": [
+        720575940621657980,
+        720575941521683123,
+        30629
+      ],
+      "super_class": [
+        "optic",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "Li05",
+        "CB2071",
+        "LC14b"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 12,
+      "root_ids": [
+        720575940627785482,
+        720575941722861626,
+        30147
+      ],
+      "super_class": [
+        "optic",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "Y1",
+        "CB1659",
+        "MeLo10"
+      ],
+      "nt": [
+        "GLUT",
+        "ACH",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 13,
+      "root_ids": [
+        720575940638632381,
+        720575941474889521,
+        27692
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB1960",
+        "CB1718",
+        "Y3"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "ACH"
+      ]
+    },
+    {
+      "row": 14,
+      "root_ids": [
+        720575940643326349,
+        720575941460197446,
+        21502
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB1734",
+        "CB2367",
+        "Pm10"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "GABA"
+      ]
+    },
+    {
+      "row": 15,
+      "root_ids": [
+        720575940633030882,
+        720575941548341053,
+        524040
+      ],
+      "super_class": [
+        "central",
+        "visceral_circulatory",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CL308",
+        "m_NSC_unknown",
+        "Y14"
+      ],
+      "nt": [
+        "ACH",
+        "",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 16,
+      "root_ids": [
+        720575940628642320,
+        720575941442149071,
+        24453
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PS180",
+        "SMP539",
+        "MeLo12"
+      ],
+      "nt": [
+        "ACH",
+        "GLUT",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 17,
+      "root_ids": [
+        720575940615799179,
+        720575941590060343,
+        535130
+      ],
+      "super_class": [
+        "ascending",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "AN_multi_6",
+        "SMP537",
+        "TmY3"
+      ],
+      "nt": [
+        "GABA",
+        "GLUT",
+        "ACH"
+      ]
+    },
+    {
+      "row": 18,
+      "root_ids": [
+        720575940624274249,
+        720575941537767144,
+        522889
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PLP245",
+        "SMP161",
+        "MeLo8"
+      ],
+      "nt": [
+        "ACH",
+        "GLUT",
+        "GABA"
+      ]
+    },
+    {
+      "row": 19,
+      "root_ids": [
+        720575940608037298,
+        720575941688052854,
+        28428
+      ],
+      "super_class": [
+        "visual_projection",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "LTe08",
+        "CB2284",
+        "Tm5Y"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        "ACH"
+      ]
+    },
+    {
+      "row": 20,
+      "root_ids": [
+        720575940610199781,
+        720575941432567511,
+        531076
+      ],
+      "super_class": [
+        "descending",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "DNp102",
+        "pC1a",
+        "Tm6"
+      ],
+      "nt": [
+        "ACH",
+        "DA",
+        ""
+      ]
+    },
+    {
+      "row": 21,
+      "root_ids": [
+        720575940627581127,
+        720575941560040975,
+        560496
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB1786_a",
+        "CB0772",
+        "Tm1"
+      ],
+      "nt": [
+        "GLUT",
+        "GLUT",
+        "ACH"
+      ]
+    },
+    {
+      "row": 22,
+      "root_ids": [
+        720575940614424370,
+        720575941557785508,
+        523818
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "visual_projection"
+      ],
+      "cell_type": [
+        "CB2406",
+        "SMP505",
+        "MeVP17"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 23,
+      "root_ids": [
+        720575940625253193,
+        720575941633245856,
+        44295
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "visual_projection"
+      ],
+      "cell_type": [
+        "PLP015",
+        "SMP346",
+        "MeTu4a"
+      ],
+      "nt": [
+        "GABA",
+        "GLUT",
+        "ACH"
+      ]
+    },
+    {
+      "row": 24,
+      "root_ids": [
+        720575940636013790,
+        720575941669984433,
+        157269
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PLP022",
+        "SMP234",
+        "MeLo6"
+      ],
+      "nt": [
+        "GABA",
+        "GLUT",
+        "ACH"
+      ]
+    },
+    {
+      "row": 25,
+      "root_ids": [
+        720575940634357867,
+        720575941539313357,
+        15764
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "visual_projection"
+      ],
+      "cell_type": [
+        "CB0649",
+        "CB3252",
+        "LoVP46"
+      ],
+      "nt": [
+        "GLUT",
+        "GLUT",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 26,
+      "root_ids": [
+        720575940632116943,
+        720575941585640414,
+        14512
+      ],
+      "super_class": [
+        "ascending",
+        "central_brain_intrinsic",
+        "visual_projection"
+      ],
+      "cell_type": [
+        "AN_multi_31",
+        "LNd_c",
+        "LT55"
+      ],
+      "nt": [
+        "GLUT",
+        "DA",
+        "GLUT"
+      ]
+    },
+    {
+      "row": 27,
+      "root_ids": [
+        720575940627608472,
+        720575941539389938,
+        118357
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "AVLP220",
+        "aMe13",
+        "MeLo6"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 28,
+      "root_ids": [
+        720575940623226061,
+        720575941572941967,
+        529787
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PLP150c",
+        "CB1071",
+        "Cm5"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "GABA"
+      ]
+    },
+    {
+      "row": 29,
+      "root_ids": [
+        720575940633918304,
+        720575941541983068,
+        515414
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CL161b",
+        "SMP261",
+        "Tm16"
+      ],
+      "nt": [
+        "ACH",
+        "ACH",
+        "ACH"
+      ]
+    },
+    {
+      "row": 30,
+      "root_ids": [
+        720575940627611142,
+        720575941634314939,
+        60387
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB3690",
+        "CB3768",
+        "Cm5"
+      ],
+      "nt": [
+        "ACH",
+        "GLUT",
+        "GABA"
+      ]
+    },
+    {
+      "row": 31,
+      "root_ids": [
+        720575940603011808,
+        720575941408537774,
+        10069
+      ],
+      "super_class": [
+        "visual_projection",
+        "central_brain_intrinsic",
+        "ascending_neuron"
+      ],
+      "cell_type": [
+        "LTe66",
+        "CB1586",
+        "AN07B004"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "GABA"
+      ]
+    },
+    {
+      "row": 32,
+      "root_ids": [
+        720575940630487035,
+        720575941515339587,
+        28363
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "cb_intrinsic"
+      ],
+      "cell_type": [
+        "IB018",
+        "CB1586",
+        "IB044"
+      ],
+      "nt": [
+        "ACH",
+        "GABA",
+        "ACH"
+      ]
+    },
+    {
+      "row": 33,
+      "root_ids": [
+        720575940641977229,
+        720575941612155053,
+        67861
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "PVLP149",
+        "CB2438",
+        "T2a"
+      ],
+      "nt": [
+        "ACH",
+        "GLUT",
+        "ACH"
+      ]
+    },
+    {
+      "row": 34,
+      "root_ids": [
+        720575940626823247,
+        720575941626518154,
+        22156
+      ],
+      "super_class": [
+        "central",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "CB2271",
+        "SMP537",
+        "LC14b"
+      ],
+      "nt": [
+        "ACH",
+        "GLUT",
+        "ACH"
+      ]
+    },
+    {
+      "row": 35,
+      "root_ids": [
+        720575940632005195,
+        720575941629939238,
+        18997
+      ],
+      "super_class": [
+        "visual_projection",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "LC15",
+        "SMP371",
+        "Mi18"
+      ],
+      "nt": [
+        "ACH",
+        "GLUT",
+        "GABA"
+      ]
+    },
+    {
+      "row": 36,
+      "root_ids": [
+        720575940605851680,
+        720575941554294299,
+        516318
+      ],
+      "super_class": [
+        "optic",
+        "central_brain_intrinsic",
+        "ol_intrinsic"
+      ],
+      "cell_type": [
+        "Li20",
+        "CB3614",
+        "Tm31"
+      ],
+      "nt": [
+        "GABA",
+        "DA",
+        "GLUT"
+      ]
+    }
+  ]
+}

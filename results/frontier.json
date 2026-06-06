@@ -1,0 +1,10 @@
+{
+  "triple": [
+    "FAFB",
+    "BANC",
+    "MCNS"
+  ],
+  "tier0_independent_set_min": 20000,
+  "tier1_outstar_N": 772,
+  "tier1_outstar_identical": true
+}
