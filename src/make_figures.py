@@ -80,14 +80,14 @@ def network_figure(headline_path, adj_path, out):
                fontsize=8)
     # pathway layer captions
     caps = {0.0: "ORN/HRN\n(receptor)", 1.0: "local neurons\n(antennal lobe)",
-            2.0: "projection\nneurons", 3.2: "Kenyon cells\n(89x KCg-m)",
+            2.0: "projection\nneurons", 3.2: "Kenyon cells\n(95x KCg-m)",
             4.4: "APL\n(feedback)"}
     for x, c in caps.items():
         plt.text(x, -0.12, c, ha="center", va="top", fontsize=9, fontweight="bold")
     plt.ylim(-0.25, 1.08)
     plt.title(f"Conserved olfactory→mushroom-body circuit (N={n}, {int(A.sum())} edges)\n"
               f"directed induced subgraph IDENTICAL across {', '.join(h['triple'])}  "
-              f"(89 KCg-m unlabeled; small dots)", fontsize=11)
+              f"(95 KCg-m unlabeled; small dots)", fontsize=11)
     plt.axis("off"); plt.tight_layout(); plt.savefig(out, dpi=150); plt.close()
     print("wrote", out)
 

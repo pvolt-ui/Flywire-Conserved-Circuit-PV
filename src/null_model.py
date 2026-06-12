@@ -22,7 +22,7 @@ selection reproduce this exact wiring?
 We also decompose the circuit into:
   - SCAFFOLD : the non-KC rows (APL + projection/local/receptor neurons), whose specific
                cross-wiring is the structurally informative part;
-  - KC-FAN   : the 89 KCg-m + APL bipartite feedback loop, where the KC pool is large and
+  - KC-FAN   : the KCg-m + APL bipartite feedback loop, where the KC pool is large and
                interchangeable.
 This reveals which part carries the conservation signal.
 

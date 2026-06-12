@@ -7,12 +7,17 @@
   ],
   "kc_kc_edges_in_core": 33,
   "common_kc_signature_classes": 9,
-  "conserved_kc_copies": 641,
-  "maximal_N": 707,
+  "naive_kc_copies": 641,
+  "naive_count_N": 707,
+  "verified_kc_copies": 155,
+  "verified_N": 221,
+  "verified_edges": 1056,
+  "verified_identical": true,
+  "verified_vf2_iso": true,
   "per_dataset_kc_attaching": [
     1670,
     897,
     1403
   ],
-  "note": "lower-bound approximation: KC layer treated as an independent fan onto the scaffold; kc_kc_edges_in_core small KC<->KC edges ignored"
+  "note": "verified_N is built as scaffold + an independent KC fan and is byte-identical + VF2-isomorphic across all 3 datasets (a true lower bound). naive_count_N is an UPPER estimate that ignores KC<->KC edges and is NOT isomorphic as-is; it overcounts. Report verified_N."
 }

@@ -6,8 +6,9 @@
 
 **What is a constraint, and what is a finding.** We *require* matched neurons to share cell type — so "169/169 cell-type concordant" is an imposed constraint, not a discovered fact. The non-trivial finding is that, under that constraint, **a 169-node weakly-connected circuit with byte-identical directed wiring exists in all three connectomes, and that this exact wiring is statistically significant rather than an artifact of having many interchangeable same-typed neurons.**
 
-**The circuit (Fig. 1).** The matched neurons form the complete early-olfactory-to-memory cascade, now including the mushroom-body output stage:
-**sensory receptor neurons → antennal-lobe projection + local neurons → Kenyon cells → APL feedback → MBON output.**
+**The circuit (Fig. 1).** The matched neurons form the early-olfactory-to-memory cascade:
+**sensory receptor neurons → antennal-lobe projection + local neurons → Kenyon cells ↔ APL global feedback.**
+Two further mushroom-body-associated neurons (MBON30, CRE075) are also matched and weakly connected — but within this induced subgraph they feed *into* APL (MBON30 → APL, MBON30 → CRE075 → APL), they do **not** read out the Kenyon cells. We therefore do not claim a complete KC → MBON output stage; the conserved core is the ORN → PN/LN → KC ↔ APL feedback loop.
 
 | Layer | Example cell types (FAFB) | n | NT |
 |---|---|---|---|
@@ -16,9 +17,9 @@
 | Projection | `VP1m_l2PN`, `VP1d+VP4_l2PN1`, `VC3_adPN` | 3 | ACh |
 | Memory | `KCg-m` (γ-main), `KCab-p`, `KCg-d` Kenyon cells | 103 | ACh |
 | Feedback | `APL` (Anterior Paired Lateral) | 1 | GABA |
-| Output | `MBON30`, `CRE075` | 2 | Glu |
+| MB-assoc. (→APL) | `MBON30`, `CRE075` | 2 | Glu |
 
-Neurotransmitters are internally coherent: a cholinergic feedforward spine (ORN → PN → KC), shaped by GABAergic / serotonergic lateral inhibition and a single GABAergic global-feedback neuron (APL), reading out through glutamatergic output neurons. APL is the highest-degree node (108 in / 106 out; 448 reciprocal pairs within the circuit) — the structural basis for the negative feedback that sparsens and decorrelates odor codes (Lin et al. 2014; Amin et al. 2020).
+Neurotransmitters are internally coherent: a cholinergic feedforward spine (ORN → PN → KC), shaped by GABAergic / serotonergic lateral inhibition and a single GABAergic global-feedback neuron (APL); two glutamatergic MB-associated neurons (MBON30, CRE075) additionally feed *into* APL within this subgraph. APL is the highest-degree node (108 in / 106 out; 448 reciprocal pairs within the circuit) — the structural basis for the negative feedback that sparsens and decorrelates odor codes (Lin et al. 2014; Amin et al. 2020).
 
 ## Significance — the conserved wiring is not expected by chance
 
@@ -55,9 +56,9 @@ Taken literally, "maximize N of mutually isomorphic induced subgraphs" is degene
 | 1 | Common induced out-star | 772 | trivial-ish |
 | 2a | Largest structural-only circuit | 37 (0/37 same type) | topological coincidence |
 | **2b** | **Cell-type-conserved rich 2-core circuit** | **169** | **reported headline (significant, p < 10⁻⁴)** |
-| 2c | Maximal cell-type-conserved set (KC fan expanded) | ≥ 707 | size-maximal lower bound |
+| 2c | Maximal cell-type-conserved set (KC fan expanded, VF2-verified) | ≥ 221 | size-maximal verified lower bound |
 
-Tier 2a vs 2b is the key contrast: a purely topological match of 37 neurons is exactly isomorphic yet **0/37 are the same cell type** — topological isomorphism alone is not homology. Requiring cell-type identity yields a genuine conserved circuit, and the biological constraint lets it grow *larger* (169 > 37) because real conserved wiring is more extensive than coincidental wiring. Tier 2c answers the literal "largest" objective: keeping *all* interchangeable Kenyon cells (bijection-bounded across datasets, treating the KC layer as a fan onto the scaffold) gives a conserved set of **≥ 707** neurons.
+Tier 2a vs 2b is the key contrast: a purely topological match of 37 neurons is exactly isomorphic yet **0/37 are the same cell type** — topological isomorphism alone is not homology. The 169-node headline circuit is *itself* a valid structural match (byte-identical regardless of labels), so the cell-type constraint does **not** enlarge it — a constraint can only restrict the eligible candidates at each step. Rather, it *guides* the search toward a biologically coherent, denser region and lets us interpret the match as a conserved circuit and then test its significance; the 37-vs-169 gap is an artifact of different seeds (degree-signature sweep vs. APL-seeded growth), not a benefit of the constraint. Tier 2c addresses the literal "largest" objective with a *verified* number: starting from the 66-node scaffold we add Kenyon cells as an independent fan and **re-confirm byte-identity + VF2 isomorphism** across all three datasets, giving a conserved set of **≥ 221** neurons. (A naive interchangeable-slot count gives 707, but that ignores the KC↔KC block and is not isomorphic as built — it overcounts ≈ 3.2×; we report only the verified figure.)
 
 ## Observations
 
@@ -65,7 +66,7 @@ Tier 2a vs 2b is the key contrast: a purely topological match of 37 neurons is e
 2. **APL feedback is the structural heart.** APL is the highest-degree node and is reciprocally connected to the Kenyon-cell pool — the anatomical basis for the global inhibition that produces sparse, decorrelated odor codes for selective learning.
 3. **Topology ≠ homology.** The 37-neuron structural-only match (0/37 concordant) versus the 169-neuron type-conserved circuit shows that a coincidental isomorphism is not a conserved circuit; homology must be imposed and then *tested* for significance — which we do.
 
-**Hypothesis.** The ORN → PN/LN → KC → APL → MBON motif is a conserved computational primitive: sparsen sensory input, regulate it by global inhibition, then store and read out for associative memory. The motif is under strong stabilizing constraint while individual PN→KC partners remain free (Caron et al. 2013) — conserved computation, idiosyncratic instances.
+**Hypothesis.** The ORN → PN/LN → KC ↔ APL motif is a conserved computational primitive: sparsen sensory input and regulate it by global feedback inhibition, the substrate for selective associative learning. The motif is under strong stabilizing constraint while individual PN→KC partners remain free (Caron et al. 2013) — conserved computation, idiosyncratic instances.
 
 **Data note.** The provided edge lists contain no synapse weights (two columns: source, target), so per the rules we use each released directed connection as-is; no weight threshold is applied or applicable. We drop self-loops and collapse any duplicate ordered pairs. BANC/MCNS cell types and neurotransmitters are partly predicted (FAFB is curated); concordance uses these published labels.
 

@@ -17,7 +17,7 @@ The task asks for the largest set of N neurons whose directed induced subgraphs 
 
 Taken literally, the objective is degenerate. Any N mutually non-adjacent neurons induce the empty graph, trivially isomorphic to any other empty graph; likewise any clique. So "maximize N" alone is won by biologically meaningless structures — we measured this: a common independent set of ≥ 20,000 neurons and a common out-star of 772 both exist and are both "valid" under the literal rule.
 
-We therefore report the largest subgraph that is simultaneously (i) a connected directed circuit (undirected 2-core: every node total-degree ≥ 2, no dangling leaves) and (ii) biologically homologous — each matched neuron the same annotated cell type in all three datasets. **Cell-type identity is a constraint we impose, not a result we discover.** The result is that, under it, a 169-node identical-wiring circuit exists *and is significant* (see §3). This is consistent with the challenge's stated preference for methodological rigor over raw size; for those who want raw size, we also report a size-maximal lower bound of ≥ 707 (§4).
+We therefore report the largest subgraph that is simultaneously (i) a weakly-connected, richly-connected core (undirected 2-core: every node total-degree ≥ 2, no dangling leaves) and (ii) biologically homologous — each matched neuron the same annotated cell type in all three datasets. **Cell-type identity is a constraint we impose, not a result we discover.** The result is that, under it, a 169-node identical-wiring circuit exists *and is significant* (see §3). This is consistent with the challenge's stated preference for methodological rigor over raw size; for those who want raw size, we also report a **VF2-verified** size-maximal lower bound of ≥ 221 (§4 — a naive interchangeable-slot count gives 707, but that count is not isomorphic as built; we report only what verifies).
 
 ### The degeneracy frontier (we report the rightmost meaningful point)
 
@@ -27,9 +27,9 @@ We therefore report the largest subgraph that is simultaneously (i) a connected 
 | 1 | Common induced out-star | 772 | — | trivial-ish |
 | 2a | Largest structural-only induced circuit | 37 | 0 / 37 | topological coincidence |
 | **2b** | **Cell-type-conserved rich 2-core circuit** | **169** | **169 / 169** | **reported headline** |
-| 2c | Maximal cell-type-conserved set (KC fan expanded) | ≥ 707 | all | size-maximal lower bound |
+| 2c | Maximal cell-type-conserved set (KC fan expanded, VF2-verified) | ≥ 221 | all | size-maximal verified lower bound |
 
-Tier 2a is important: a purely topological match of 37 neurons is exactly isomorphic yet zero of its neurons are the same cell type. *Topological isomorphism alone does not imply biological homology.* Requiring cell-type identity is what makes 2b a genuine conserved circuit — and the biological constraint lets it grow larger (169 > 37), because real conserved wiring is more extensive than coincidental wiring.
+Tier 2a is important: a purely topological match of 37 neurons is exactly isomorphic yet zero of its neurons are the same cell type. *Topological isomorphism alone does not imply biological homology.* Note that the 169-node headline circuit is **itself a valid structural match** — its adjacency is byte-identical across datasets regardless of labels — so the cell-type constraint does **not** *enlarge* the result (adding a constraint can only restrict the candidates eligible at each growth step, never expand them). What the constraint does is *guide* the search toward a biologically coherent, denser region (the Kenyon-cell fan onto APL) and let us **interpret** the match as a conserved circuit and then test it for significance. The 37-vs-169 gap reflects the different searches that produced them — a degree-signature seed sweep (Tier 2a) vs. APL-seeded growth (Tier 2b) — not a benefit of the constraint; 37 is an artifact of weaker seeding, not the structural maximum.
 
 ## 2. Datasets and which three we chose
 
@@ -62,7 +62,7 @@ We chose FAFB, BANC, MCNS — the three datasets that all contain a full central
 
 ## 4. Maximal set (`src/maximal_set.py`)
 
-The headline keeps one representative per (signature, type). Keeping *all* interchangeable Kenyon cells (bounded per dataset by the scarcest dataset, treating the KC layer as a fan onto the 66-node scaffold) gives a conserved, mutually-isomorphic set of **≥ 707** neurons — a defensible answer to the literal "largest" objective. (Approximation: a small number of KC–KC edges in the core are ignored; see the script.)
+The headline keeps one representative per (signature, type). Many same-typed neurons share a scaffold-attachment signature (e.g. hundreds of KCg-m attach to APL identically), so they are candidate interchangeable members of the same conserved structure. A naive bijection-bounded count of all such Kenyon cells gives 707 — but that count **ignores the KC↔KC block and is not isomorphic as built**. `maximal_set.py` therefore *constructs* the set and re-checks it: starting from the (already-identical) 66-node scaffold it adds KC triples as an independent fan (each new KC non-adjacent to every already-added KC in its own graph, so the KC↔KC block stays empty in all three datasets), then confirms the result is **byte-identical and VF2-isomorphic** across FAFB/BANC/MCNS. That verified set is **N = 221** (66 scaffold + 155 KC fan, 1056 edges) — a genuine, verified lower bound on the largest cell-type-conserved circuit. The naive 707 overcounts it ≈ 3.2×; we report only the VF2-verified 221.
 
 ## 5. Reproduce
 

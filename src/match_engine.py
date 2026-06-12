@@ -181,9 +181,13 @@ def grow_common_subgraph(graphs: list[DiGraph], seeds: list[int],
 
 # ---------------------------------------------------------------- circuit extraction
 def two_core_positions(A: np.ndarray) -> np.ndarray:
-    """Return positions of the undirected 2-core of adjacency A (min total degree >= 2).
-    Removes dangling leaves so the result is a real 'circuit' (every node on a cycle
-    path), not a star/tree fringe."""
+    """Return positions of the UNDIRECTED 2-core of adjacency A (min total degree >= 2).
+    Removes dangling leaves (degree-1 fringe) so the result is a richly-connected core
+    rather than a star/tree. NOTE: this is the *undirected* 2-core, so it guarantees
+    every node has >=2 incident edges and the component is weakly connected -- it does
+    NOT guarantee every node lies on a directed cycle (e.g. sensory sources and output
+    sinks remain), which is the challenge's weak-connectivity requirement, not a stronger
+    strong-connectivity claim."""
     und = (A | A.T).astype(bool)
     keep = np.ones(A.shape[0], dtype=bool)
     while True:
