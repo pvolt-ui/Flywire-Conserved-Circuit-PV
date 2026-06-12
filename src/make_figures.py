@@ -63,7 +63,7 @@ def network_figure(headline_path, adj_path, out):
     colors = [NT_COLORS.get((nt.split(",")[0] if nt else ""), "#999999") for nt in nts]
     sizes = [620 if types[i] == "APL" else (90 if types[i].startswith("KC") else 300)
              for i in range(n)]
-    plt.figure(figsize=(13, 10))
+    plt.figure(figsize=(9, 6.5))
     nx.draw_networkx_edges(G, pos, arrows=True, arrowsize=6, width=0.4,
                            edge_color="#888888", alpha=0.4,
                            connectionstyle="arc3,rad=0.06")
@@ -88,7 +88,9 @@ def network_figure(headline_path, adj_path, out):
     plt.title(f"Conserved olfactory→mushroom-body circuit (N={n}, {int(A.sum())} edges)\n"
               f"directed induced subgraph IDENTICAL across {', '.join(h['triple'])}  "
               f"(95 KCg-m unlabeled; small dots)", fontsize=11)
-    plt.axis("off"); plt.tight_layout(); plt.savefig(out, dpi=150); plt.close()
+    plt.axis("off"); plt.tight_layout()
+    plt.savefig(out, dpi=110, bbox_inches="tight", pil_kwargs={"optimize": True})
+    plt.close()
     print("wrote", out)
 
 

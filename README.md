@@ -1,109 +1,229 @@
+
 # Largest Conserved Neuronal Circuit Across FlyWire Connectomes
 
-Result in one line: the canonical olfactory → mushroom-body associative-memory pathway — a directed induced subgraph of **N = 169 neurons / 1,045 edges** — is exactly isomorphic (VF2-verified, byte-identical adjacency) across three independent connectomes, with all 169 matched neurons sharing cell type, and the exact correspondence is **statistically significant** (null model: 0 / 10,000 random same-typed matchings reproduce it; p < 10⁻⁴). Datasets: female brain (FAFB), female brain + nerve cord (BANC), male CNS (MCNS) — so the circuit is conserved across sex and CNS region.
+**Result in one line.**
 
-`network.csv` — 3 columns (FAFB, BANC, MCNS) × 169 rows (matched neuron IDs). `science.md` — the one-page scientific report.
+I found the canonical olfactory → mushroom-body associative-memory pathway as a directed induced subgraph with 169 neurons and 1,045 edges. The subgraph is exactly isomorphic across three independent connectomes. VF2 verifies the match and the adjacency matrices are byte-identical. All 169 matched neurons share the same annotated cell type. A type-constrained null model reproduced the result 0 times in 10,000 trials (p < 10⁻⁴). The datasets are FAFB, BANC, and MCNS. The circuit is therefore conserved across sex and CNS region.
 
-**Verify the headline on a clean clone in seconds (no data download):**
+`network.csv` contains 169 matched neuron IDs across FAFB, BANC, and MCNS.
+
+`science.md` contains the scientific report.
+
+## Verify the result
+
 ```bash
-python verify_artifact.py        # asserts weak-connectivity + 2-core + 169/169 concordance from results/
+python verify_artifact.py
 ```
+
+This checks weak connectivity, the 2-core property, and 169/169 cell-type concordance from the committed results.
 
 ---
 
-## 1. Problem and the assumption that matters most
+# 1. Problem and the key assumption
 
-The task asks for the largest set of N neurons whose directed induced subgraphs are mutually isomorphic across ≥ 3 of the 5 datasets, ignoring edge weights.
+The challenge asks for the largest set of neurons whose directed induced subgraphs are mutually isomorphic across at least three datasets, ignoring edge weights.
 
-Taken literally, the objective is degenerate. Any N mutually non-adjacent neurons induce the empty graph, trivially isomorphic to any other empty graph; likewise any clique. So "maximize N" alone is won by biologically meaningless structures — we measured this: a common independent set of ≥ 20,000 neurons and a common out-star of 772 both exist and are both "valid" under the literal rule.
+Taken literally, the objective is degenerate.
 
-We therefore report the largest subgraph that is simultaneously (i) a weakly-connected, richly-connected core (undirected 2-core: every node total-degree ≥ 2, no dangling leaves) and (ii) biologically homologous — each matched neuron the same annotated cell type in all three datasets. **Cell-type identity is a constraint we impose, not a result we discover.** The result is that, under it, a 169-node identical-wiring circuit exists *and is significant* (see §3). This is consistent with the challenge's stated preference for methodological rigor over raw size; for those who want raw size, we also report a **VF2-verified** size-maximal lower bound of ≥ 221 (§4 — a naive interchangeable-slot count gives 707, but that count is not isomorphic as built; we report only what verifies).
+Any set of mutually non-adjacent neurons induces an empty graph. Empty graphs are trivially isomorphic. Large cliques have the same problem. I measured both effects. A common independent set with more than 20,000 neurons exists. A common out-star with 772 neurons also exists. Both satisfy the literal objective but are biologically uninformative.
 
-### The degeneracy frontier (we report the rightmost meaningful point)
+I therefore report the largest subgraph that satisfies two additional requirements:
+
+1. It is a weakly connected, richly connected core. I enforce an undirected 2-core, so every node has total degree at least 2 and no leaves remain.
+2. Every matched neuron has the same annotated cell type in all three datasets.
+
+Cell-type agreement is a constraint that I impose. It is not a discovery.
+
+Under that constraint, I find a 169-node circuit with identical wiring across all three connectomes. The result is statistically significant. For readers interested only in size, I also report a VF2-verified lower bound of at least 221 neurons. A naive interchangeable-slot count gives 707, but that construction is not isomorphic and is not reported as a result.
+
+## Degeneracy frontier
 
 | Tier | Structure | N | Cell-type concordant? | Verdict |
-|---|---|---|---|---|
-| 0 | Common independent set (empty graph) | ≥ 20,000 | — | trivial |
-| 1 | Common induced out-star | 772 | — | trivial-ish |
-| 2a | Largest structural-only induced circuit | 37 | 0 / 37 | topological coincidence |
-| **2b** | **Cell-type-conserved rich 2-core circuit** | **169** | **169 / 169** | **reported headline** |
-| 2c | Maximal cell-type-conserved set (KC fan expanded, VF2-verified) | ≥ 221 | all | size-maximal verified lower bound |
+|---|---|---:|---|---|
+| 0 | Common independent set | ≥ 20,000 | — | Trivial |
+| 1 | Common induced out-star | 772 | — | Trivial-ish |
+| 2a | Largest structural-only induced circuit | 37 | 0 / 37 | Topological coincidence |
+| 2b | Cell-type-conserved rich 2-core circuit | 169 | 169 / 169 | Reported result |
+| 2c | Maximal cell-type-conserved set | ≥ 221 | All | Verified lower bound |
 
-Tier 2a is important: a purely topological match of 37 neurons is exactly isomorphic yet zero of its neurons are the same cell type. *Topological isomorphism alone does not imply biological homology.* Note that the 169-node headline circuit is **itself a valid structural match** — its adjacency is byte-identical across datasets regardless of labels — so the cell-type constraint does **not** *enlarge* the result (adding a constraint can only restrict the candidates eligible at each growth step, never expand them). What the constraint does is *guide* the search toward a biologically coherent, denser region (the Kenyon-cell fan onto APL) and let us **interpret** the match as a conserved circuit and then test it for significance. The 37-vs-169 gap reflects the different searches that produced them — a degree-signature seed sweep (Tier 2a) vs. APL-seeded growth (Tier 2b) — not a benefit of the constraint; 37 is an artifact of weaker seeding, not the structural maximum.
+Tier 2a is important. The 37-node structural match is exactly isomorphic, but none of the matched neurons share cell type.
 
-## 2. Datasets and which three we chose
+Topological isomorphism alone does not establish biological homology.
 
-We chose FAFB, BANC, MCNS — the three datasets that all contain a full central brain and that span both sexes (FAFB ♀, BANC ♀, MCNS ♂), so any conserved circuit is a statement about sex- and region-invariant wiring. (MANC is nerve-cord only; MAOL is optic-lobe only.) After cleaning, graph sizes match the official Codex neuron counts.
+The 169-node circuit is itself a valid structural match. The cell-type constraint does not enlarge the result. Adding a constraint can only reduce the candidates available during growth. The constraint helps steer the search toward a biologically coherent and denser region. It also allows a meaningful significance test.
+
+The difference between 37 and 169 comes from different search procedures. The 37-node result comes from a degree-signature seed sweep. The 169-node result comes from APL-seeded growth. The gap is not evidence that the constraint improves the structural optimum.
+
+# 2. Datasets
+
+I use FAFB, BANC, and MCNS because all three contain a full central brain. They also span both sexes.
+
+FAFB is female brain.
+
+BANC is female brain plus nerve cord.
+
+MCNS is male CNS.
+
+MANC contains only nerve cord. MAOL contains only optic lobe.
 
 | Dataset | Sex / region | Nodes | Directed edges |
-|---|---|---|---|
-| FAFB v783 | ♀ brain | 138,584 | 3,732,460 |
-| BANC v626 | ♀ brain + nerve cord | 112,885 | 2,676,592 |
-| MCNS v0.9 | ♂ CNS | 165,820 | 6,239,094 |
+|---|---|---:|---:|
+| FAFB v783 | Female brain | 138,584 | 3,732,460 |
+| BANC v626 | Female brain + nerve cord | 112,885 | 2,676,592 |
+| MCNS v0.9 | Male CNS | 165,820 | 6,239,094 |
 
-## 3. Method
+# 3. Method
 
-**Cleaning (`src/io_utils.py`).** Per the rules we ignore synapse weights — in fact the provided edge lists carry none (two columns: source, target), so no synapse threshold is applicable. We drop self-loops, collapse duplicate ordered pairs, and relabel root IDs to contiguous indices cached as `.npy`.
+## Cleaning
 
-**Graph core (`src/graph_core.py`).** CSR in/out adjacency plus a sorted packed-edge array giving O(log M) vectorized edge-existence tests — the workhorse for induced-subgraph queries at multi-million-edge scale. Validated against NetworkX (`src/test_core.py`).
+I ignore edge weights as required. The released edge lists contain only source and target columns, so no synapse threshold can be applied.
 
-**Conserved-circuit search (`src/match_engine.py`).** We grow a common induced subgraph across all three graphs from a seed triple:
-- *Correctness by construction.* We only add a node-triple whose in/out attachment pattern to the matched set is the identical bit-string in all three graphs; appending an identical row+column to identical matrices keeps them identical, so the induced subgraphs are isomorphic at every step (the matched ordering *is* the isomorphism).
-- *Biological constraint.* The added triple must also share cell type in all three datasets.
-- *Deterministic.* The frontier is sorted and the per-signature representative is the highest-degree candidate (tie-break by index), so the search is fully reproducible run-to-run (no seed needed; there is no randomness).
-- *Circuit extraction.* From the grown subgraph we take the 2-core and its largest weakly-connected component.
-- *Seeding.* The reported circuit seeds from APL (the mushroom-body global-feedback neuron).
+I remove self-loops, collapse duplicate ordered pairs, and relabel root IDs to contiguous indices.
 
-**Independent verification (`src/iso_utils.py`).** The final correspondence is confirmed two ways: (a) the three induced adjacency matrices are byte-identical, and (b) exact VF2 directed isomorphism passes for all pairs. WL-hashing only buckets candidates; every guarantee comes from VF2.
+## Graph representation
 
-**Significance (`src/null_model.py`).** A type-constrained random-matching null draws random same-typed neurons for each row in BANC/MCNS and tests how often the exact FAFB wiring is reproduced. Over 10,000 draws per dataset: **0 reproduce it (p < 10⁻⁴)**; the best random attempt matches only ~half the edges. The scaffold alone is likewise never reproduced. The conserved wiring is therefore not an artifact of cell-type degeneracy.
+I store CSR in- and out-adjacency structures together with a sorted packed-edge array. This supports O(log M) vectorized edge-existence checks for induced-subgraph queries on graphs with millions of edges.
 
-**Population corroboration (`src/connectivity_stats.py`).** Per-type connection statistics over the *full* populations agree across datasets: P(PN→KCg-m) ≈ 0.023–0.031, APL→KC coverage ≈ 0.89–1.0.
+I validated the implementation against NetworkX.
 
-## 4. Maximal set (`src/maximal_set.py`)
+## Conserved-circuit search
 
-The headline keeps one representative per (signature, type). Many same-typed neurons share a scaffold-attachment signature (e.g. hundreds of KCg-m attach to APL identically), so they are candidate interchangeable members of the same conserved structure. A naive bijection-bounded count of all such Kenyon cells gives 707 — but that count **ignores the KC↔KC block and is not isomorphic as built**. `maximal_set.py` therefore *constructs* the set and re-checks it: starting from the (already-identical) 66-node scaffold it adds KC triples as an independent fan (each new KC non-adjacent to every already-added KC in its own graph, so the KC↔KC block stays empty in all three datasets), then confirms the result is **byte-identical and VF2-isomorphic** across FAFB/BANC/MCNS. That verified set is **N = 221** (66 scaffold + 155 KC fan, 1056 edges) — a genuine, verified lower bound on the largest cell-type-conserved circuit. The naive 707 overcounts it ≈ 3.2×; we report only the VF2-verified 221.
+I grow a common induced subgraph from a seed triple.
 
-## 5. Reproduce
+**Correctness by construction.**
+
+I add a node triple only when its in- and out-attachment pattern to the current matched set is the same bit string in all three graphs.
+
+The key invariant is simple. If three adjacency matrices are identical and I append the same row and the same column to each matrix, the matrices remain identical. The matched ordering therefore defines the isomorphism throughout growth.
+
+**Biological constraint.**
+
+Every added triple must share the same cell type across all three datasets.
+
+**Determinism.**
+
+I sort the frontier and choose the highest-degree representative for each signature. Ties break by index. The procedure contains no randomness and produces the same result every run.
+
+**Circuit extraction.**
+
+After growth, I take the 2-core and then the largest weakly connected component.
+
+**Seed.**
+
+The reported circuit starts from APL, the mushroom-body global-feedback neuron.
+
+## Independent verification
+
+I verify the final correspondence in two ways.
+
+1. The induced adjacency matrices are byte-identical.
+2. Directed VF2 isomorphism succeeds for every pair of datasets.
+
+WL hashing is used only for candidate bucketing. All guarantees come from exact verification.
+
+## Significance
+
+I use a type-constrained random-matching null model.
+
+For each row, I select a random same-typed neuron in BANC and MCNS. I then test whether the induced wiring reproduces the FAFB template.
+
+Across 10,000 trials per dataset, the exact wiring appears 0 times.
+
+p < 10⁻⁴.
+
+The best random trial reproduces only about half of the edges.
+
+I also test the search procedure itself. I keep the real graphs and the real APL seed. I then shuffle cell-type labels within each dataset while preserving type frequencies. This destroys the relationship between type and wiring.
+
+Across 100 replicates, the conserved 2-core circuit collapses to a maximum of 9 nodes and a mean of 1.0 nodes.
+
+The real result contains 169 nodes.
+
+No shuffled run reaches 169.
+
+0 / 100 ≥ 169.
+
+p ≈ 0.01.
+
+The raw common subgraph still grows large after shuffling, with mean full-N ≈ 216. The signal is therefore not that a common subgraph exists. The signal is the richly connected conserved circuit.
+
+## Population-level corroboration
+
+I also measure connection statistics across the full populations of each cell type.
+
+P(PN → KCg-m) ≈ 0.023–0.031.
+
+APL → KC coverage ≈ 0.89–1.0.
+
+These values agree closely across datasets.
+
+# 4. Maximal set
+
+The headline result keeps one representative per signature and cell type.
+
+Many neurons share the same scaffold-attachment signature. Hundreds of KCg-m neurons, for example, connect to APL in the same way. They are interchangeable candidates within the conserved structure.
+
+A naive count suggests 707 neurons. That count ignores the KC↔KC block and is not isomorphic as constructed.
+
+I therefore build the expanded set explicitly and verify it.
+
+I start from the already identical 66-node scaffold.
+
+I then add KC triples as an independent fan. Each added KC is non-adjacent to every previously added KC within its own graph. The KC↔KC block therefore remains empty in all three datasets.
+
+I then re-check byte identity and VF2 isomorphism.
+
+The verified result contains 221 neurons and 1,056 edges.
+
+This is a genuine lower bound on the largest cell-type-conserved circuit.
+
+The naive count overestimates the size by roughly 3.2×. I report only the verified value.
+
+# 5. Reproduction
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate
-pip install -r requirements.txt          # pinned versions
+pip install -r requirements.txt
 
-python download_data.py                  # fetch Codex cell-type / NT metadata into data/meta/
-python run.py                            # clean graphs -> conserved circuit -> network.csv + results/
-python src/null_model.py 10000           # significance (p-value)
-python src/connectivity_stats.py         # population-level corroboration
-python src/maximal_set.py                # size-maximal lower bound
-python src/make_figures.py && python src/make_3d.py   # figures
+python download_data.py
+python run.py
 
-python verify_artifact.py                # self-contained check (no external data)
-python verify_submission.py              # independent check against the raw edge lists
+python src/null_model.py 10000
+python src/null_grower.py 100
+python src/connectivity_stats.py
+python src/maximal_set.py
+
+python src/make_figures.py && python src/make_3d.py
+
+python verify_artifact.py
+python verify_submission.py
 ```
 
-The five raw edge-list CSVs are the challenge-provided files at the repo root. `download_data.py` lists the exact Codex GCS URLs/versions and the local filename mapping for the metadata.
-
-## 6. Repository layout
+# 6. Repository layout
 
 ```
-network.csv                 # DELIVERABLE: 3 cols (FAFB,BANC,MCNS) x 169 matched neuron IDs
-science.md                  # DELIVERABLE: one-page scientific report
-run.py                      # canonical entrypoint -> regenerates network.csv + results/
-verify_artifact.py          # self-contained headline check (committed artifacts only)
+network.csv                 # deliverable: 3 columns (FAFB, BANC, MCNS) x 169 matched neuron IDs
+science.md                  # deliverable: one-page scientific report
+run.py                      # entry point: clean graphs -> conserved circuit -> network.csv + results/
+verify_artifact.py          # self-contained check (committed artifacts only, no data download)
 verify_submission.py        # independent check against the raw edge lists
-download_data.py            # fetch Codex metadata (URLs + filename mapping)
+download_data.py            # fetch Codex cell-type / neurotransmitter metadata
 src/                        # io_utils, graph_core, iso_utils, match_engine, annotate,
-                            # null_model, connectivity_stats, maximal_set,
+                            # null_model, null_grower, connectivity_stats, maximal_set,
                             # make_figures, make_3d, test_core  (+ legacy find_circuit*)
-results/                    # headline_typed.json, null_model.json, maximal_set.json,
-                            # connectivity_stats.json, frontier.json, adjacency .npy
+results/                    # headline_typed.json, null_model.json, null_grower.json,
+                            # maximal_set.json, connectivity_stats.json, frontier.json, adjacency .npy
 figures/                    # circuit_network.png, frontier.png, circuit_3d.png
 data/clean/                 # cached cleaned graphs (.npy)
 data/meta/                  # Codex cell-type / neurotransmitter tables
 ```
 
-## 7. Honest limitations
+# 7. Limitations
 
-- The correspondence is type- and wiring-preserving: a FAFB KCg-m maps to *a* KCg-m in MCNS with identical induced wiring — not a claim of identical individual cells (impossible across specimens). This is the biologically correct notion of cross-animal homology.
-- BANC/MCNS cell types and neurotransmitters are partly predicted; FAFB is curated. Concordance uses these published labels.
-- The growth heuristic is greedy (not a proof of the global maximum). N = 169 is a strong, verified, significant lower bound on the largest cell-type-conserved circuit; the exact maximum is NP-hard. All reported isomorphisms are exact and VF2-verified.
+The correspondence preserves both wiring and cell type. A FAFB KCg-m maps to a KCg-m in MCNS with identical induced wiring. I do not claim that individual cells are identical across animals. The result concerns cross-animal homology.
+
+Some BANC and MCNS cell-type and neurotransmitter labels are predicted. FAFB labels are curated. I use the published annotations.
+
+The growth procedure is greedy. It is not a proof of the global optimum. Finding the exact maximum is NP-hard.
+
+The reported isomorphisms are exact. Every reported match is VF2-verified.

@@ -1,0 +1,14 @@
+{
+  "n_replicates": 100,
+  "seed": 0,
+  "real_full_N": 281,
+  "real_circuit_N": 169,
+  "null_circuit_max": 9,
+  "null_circuit_mean": 1.05,
+  "null_circuit_p95": 4.049999999999997,
+  "null_full_max": 254,
+  "null_full_mean": 215.81,
+  "n_null_ge_real": 0,
+  "p_circuit_ge_real": 0.009900990099009901,
+  "note": "Labels permuted within each dataset (type frequencies preserved, type<->wiring destroyed); the canonical APL-seeded grower was re-run unchanged. The conserved 2-core circuit collapses under shuffling, so N=169 reflects genuine type-wiring alignment, not the search heuristic."
+}
