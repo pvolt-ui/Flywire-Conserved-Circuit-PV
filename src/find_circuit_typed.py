@@ -4,6 +4,11 @@ matched neurons must share both wiring pattern AND cell type across all three
 datasets. This yields a biologically homologous conserved circuit (same named cell
 types, identical directed wiring) across sex and CNS region.
 
+NOTE: this is an earlier frontier stage (a typed seed-sweep). The CANONICAL headline
+producer is the repo-root `run.py` (APL-seeded growth → N=169). Running this script
+will overwrite network.csv with the seed-sweep result; re-run `run.py` to restore the
+headline artifact.
+
 Usage:  python find_circuit_typed.py FAFB BANC MCNS
 """
 from __future__ import annotations

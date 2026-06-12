@@ -1,0 +1,18 @@
+{
+  "scaffold_N": 66,
+  "kc_types": [
+    "KCab-p",
+    "KCg-d",
+    "KCg-m"
+  ],
+  "kc_kc_edges_in_core": 33,
+  "common_kc_signature_classes": 9,
+  "conserved_kc_copies": 641,
+  "maximal_N": 707,
+  "per_dataset_kc_attaching": [
+    1670,
+    897,
+    1403
+  ],
+  "note": "lower-bound approximation: KC layer treated as an independent fan onto the scaffold; kc_kc_edges_in_core small KC<->KC edges ignored"
+}

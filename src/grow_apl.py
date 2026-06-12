@@ -1,5 +1,8 @@
 """grow_apl.py — grow the APL-seeded mushroom-body conserved circuit to its ceiling
-and report structure + composition. Run with python -u."""
+and report structure + composition. Run with python -u.
+
+This is the canonical headline producer; the repo-root `run.py` is a thin wrapper around
+it. The other src/find_circuit*.py scripts are earlier frontier stages, not canonical."""
 import os, json, time
 import numpy as np
 from collections import Counter

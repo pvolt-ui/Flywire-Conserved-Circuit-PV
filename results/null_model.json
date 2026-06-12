@@ -1,0 +1,49 @@
+{
+  "n_trials": 10000,
+  "seed": 0,
+  "N": 169,
+  "scaffold_N": 66,
+  "kc_N": 103,
+  "datasets": {
+    "BANC": {
+      "full_circuit": {
+        "n_identical": 0,
+        "p": 9.999000099990002e-05,
+        "template_edges": 1045,
+        "mean_edge_agreement": 0.9743919590025378,
+        "best_edge_agreement": 0.9833051563820795,
+        "mean_edge_jaccard": 0.41993197923667,
+        "best_edge_jaccard": 0.5683060109289617
+      },
+      "scaffold_only": {
+        "n_identical": 0,
+        "p": 9.999000099990002e-05,
+        "template_edges": 736,
+        "mean_edge_agreement": 0.9009296037296057,
+        "best_edge_agreement": 0.9433566433566434,
+        "mean_edge_jaccard": 0.48266521955772307,
+        "best_edge_jaccard": 0.6931818181818182
+      }
+    },
+    "MCNS": {
+      "full_circuit": {
+        "n_identical": 0,
+        "p": 9.999000099990002e-05,
+        "template_edges": 1045,
+        "mean_edge_agreement": 0.9749530114116657,
+        "best_edge_agreement": 0.9799943646097492,
+        "mean_edge_jaccard": 0.4214666659447361,
+        "best_edge_jaccard": 0.5309661436829067
+      },
+      "scaffold_only": {
+        "n_identical": 0,
+        "p": 9.999000099990002e-05,
+        "template_edges": 736,
+        "mean_edge_agreement": 0.9028810722610706,
+        "best_edge_agreement": 0.9363636363636364,
+        "mean_edge_jaccard": 0.49314237927416277,
+        "best_edge_jaccard": 0.6678832116788321
+      }
+    }
+  }
+}

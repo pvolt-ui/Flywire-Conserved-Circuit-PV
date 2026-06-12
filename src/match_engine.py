@@ -95,15 +95,21 @@ def _attach_sigs_batch(G: DiGraph, cand: np.ndarray, matched: np.ndarray):
 
 
 def _frontier(G: DiGraph, matched: set[int], cap: int = 4000) -> list[int]:
-    """Unmatched nodes adjacent (either direction) to the matched set."""
+    """Unmatched nodes adjacent (either direction) to the matched set.
+
+    Deterministic: we iterate `matched` in sorted order and return a SORTED list, so
+    the candidate set (and the cap cut-off) does not depend on Python set iteration
+    order. Downstream, the first candidate per (signature, type) key is therefore the
+    lowest node index, making the whole search reproducible run-to-run (no seed needed;
+    there is no randomness, only previously order-dependent set traversal)."""
     cand = set()
-    for m in matched:
+    for m in sorted(matched):
         cand.update(G.out_neighbors(m).tolist())
         cand.update(G.in_neighbors(m).tolist())
         if len(cand) > cap:
             break
     cand -= matched
-    return list(cand)
+    return sorted(cand)
 
 
 def grow_common_subgraph(graphs: list[DiGraph], seeds: list[int],
@@ -143,7 +149,14 @@ def grow_common_subgraph(graphs: list[DiGraph], seeds: list[int],
                     if e == 0:           # require the new node to connect
                         continue
                     key = sig if labels is None else (sig, labels[gi][x])
-                    if key not in d:     # first candidate per key suffices
+                    # Deterministic representative per key: highest total degree
+                    # (more onward edges -> richer future growth), tie-break lowest
+                    # index. Any node with this key is a valid match (identity depends
+                    # only on attachment to the *current* matched set), so the choice
+                    # affects only downstream growth, not correctness.
+                    cur = d.get(key)
+                    if cur is None or (G.indeg[x] + G.outdeg[x],
+                                       -x) > (G.indeg[cur] + G.outdeg[cur], -cur):
                         d[key] = x
             sigmaps.append(d)
         common = set(sigmaps[0])

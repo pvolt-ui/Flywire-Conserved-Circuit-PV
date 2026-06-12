@@ -1,0 +1,33 @@
+{
+  "pn_types": [
+    "VC3_adPN",
+    "VP1d+VP4_l2PN1",
+    "VP1m_l2PN"
+  ],
+  "datasets": {
+    "FAFB": {
+      "n_KCg_m": 2189,
+      "n_PN_circuit_types": 12,
+      "n_APL": 2,
+      "P_PN_to_KCg_m": 0.030569514237855946,
+      "APL_to_KCg_m_coverage": 1.0,
+      "KCg_m_to_APL_coverage": 1.0
+    },
+    "BANC": {
+      "n_KCg_m": 1480,
+      "n_PN_circuit_types": 10,
+      "n_APL": 2,
+      "P_PN_to_KCg_m": 0.02337837837837838,
+      "APL_to_KCg_m_coverage": 0.8871621621621621,
+      "KCg_m_to_APL_coverage": 0.7027027027027027
+    },
+    "MCNS": {
+      "n_KCg_m": 1342,
+      "n_PN_circuit_types": 12,
+      "n_APL": 2,
+      "P_PN_to_KCg_m": 0.030489319423745654,
+      "APL_to_KCg_m_coverage": 1.0,
+      "KCg_m_to_APL_coverage": 1.0
+    }
+  }
+}
