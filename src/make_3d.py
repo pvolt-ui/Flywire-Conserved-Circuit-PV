@@ -62,7 +62,7 @@ def main():
             seen[b] = seen.get(b, 0) + 1
     print("subset:", [p[1] for p in picks], flush=True)
 
-    fig = plt.figure(figsize=(11, 9))
+    fig = plt.figure(figsize=(8, 6.5))
     ax = fig.add_subplot(111, projection="3d")
     legend_done = set()
     for rid, t, b in picks:
@@ -83,7 +83,8 @@ def main():
     ax.view_init(elev=18, azim=-70)
     plt.tight_layout()
     out = os.path.join(FIG, "circuit_3d.png")
-    plt.savefig(out, dpi=150); plt.close()
+    plt.savefig(out, dpi=110, bbox_inches="tight", pil_kwargs={"optimize": True})
+    plt.close()
     print("wrote", out)
 
 
